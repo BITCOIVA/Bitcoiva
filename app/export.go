@@ -7,10 +7,10 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/codec"
-	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/slashing"
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/staking"
+	"github.com/BITCOIVA/Bitcoiva-sdk/codec"
+	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
+	"github.com/BITCOIVA/Bitcoiva-sdk/x/slashing"
+	"github.com/BITCOIVA/Bitcoiva-sdk/x/staking"
 )
 
 // export the state of bitcoiva for a genesis file

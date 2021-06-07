@@ -10,7 +10,7 @@ go test -mod=readonly -p 4 `go list ./cli_test/...` -tags=cli_test
 
 ### Test Structure
 
-This integration suite [uses a thin wrapper](https://godoc.org/github.com/osiz-blockchainapp/bitcoiva-sdk/tests) over the [`os/exec`](https://golang.org/pkg/os/exec/) package. This allows the integration test to run against built binaries (both `bitcoivad` and `bitcoivacli` are used) while being written in golang. This allows tests to take advantage of the various golang code we have for operations like marshal/unmarshal, crypto, etc...
+This integration suite [uses a thin wrapper](https://godoc.org/github.com/BITCOIVA/Bitcoiva-sdk/tests) over the [`os/exec`](https://golang.org/pkg/os/exec/) package. This allows the integration test to run against built binaries (both `bitcoivad` and `bitcoivacli` are used) while being written in golang. This allows tests to take advantage of the various golang code we have for operations like marshal/unmarshal, crypto, etc...
 
 > NOTE: The tests will use whatever `bitcoivad` or `bitcoivacli` binaries are available in your `$PATH`. You can check which binary will be run by the suite by running `which bitcoivad` or `which bitcoivacli`. If you have your `$GOPATH` properly setup they should be in `$GOPATH/bin/bitcoiva*`. This will ensure that your test uses the latest binary you have built
 
