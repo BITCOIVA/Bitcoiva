@@ -24,7 +24,7 @@ ifeq ($(LEDGER_ENABLED),true)
   else
     UNAME_S = $(shell uname -s)
     ifeq ($(UNAME_S),OpenBSD)
-      $(warning OpenBSD detected, disabling ledger support (https://github.com/osiz-blockchainapp/bitcoiva-sdk/issues/1988))
+      $(warning OpenBSD detected, disabling ledger support (https://github.com/BITCOIVA/Bitcoiva/issues/1988))
     else
       GCC = $(shell command -v gcc 2> /dev/null)
       ifeq ($(GCC),)
@@ -49,15 +49,15 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.Name=bitcoiva \
-		  -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.ServerName=bitcoivad \
-		  -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.ClientName=bitcoivacli \
-		  -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.Version=$(VERSION) \
-		  -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.Commit=$(COMMIT) \
-		  -X "github.com/osiz-blockchainapp/bitcoiva-sdk/version.BuildTags=$(build_tags_comma_sep)"
+ldflags = -X github.com/BITCOIVA/Bitcoiva/version.Name=bitcoiva \
+		  -X github.com/BITCOIVA/Bitcoiva/version.ServerName=bitcoivad \
+		  -X github.com/BITCOIVA/Bitcoiva/version.ClientName=bitcoivacli \
+		  -X github.com/BITCOIVA/Bitcoiva/version.Version=$(VERSION) \
+		  -X github.com/BITCOIVA/Bitcoiva/version.Commit=$(COMMIT) \
+		  -X "github.com/BITCOIVA/Bitcoiva/version.BuildTags=$(build_tags_comma_sep)"
 
 ifeq (cleveldb,$(findstring cleveldb,$(BITCOIVA_BUILD_OPTIONS)))
-  ldflags += -X github.com/osiz-blockchainapp/bitcoiva-sdk/types.DBBackend=cleveldb
+  ldflags += -X github.com/BITCOIVA/Bitcoiva/types.DBBackend=cleveldb
 endif
 ifeq (,$(findstring nostrip,$(BITCOIVA_BUILD_OPTIONS)))
   ldflags += -w -s
