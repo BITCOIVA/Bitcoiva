@@ -16,9 +16,9 @@ import (
 
 	bitcoiva "github.com/cosmos/bitcoiva/app"
 
-	// sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
-	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/auth"
+	// sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/auth"
 )
 
 func init() {

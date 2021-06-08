@@ -29,7 +29,7 @@ This is a command with boilerplate for using Go as a scripting language to hack
 on an existing Bitcoiva state.
 
 Currently we have an example for the state of bitcoiva-6001 after it
-[crashed](https://github.com/BITCOIVA/Bitcoiva-sdk/blob/master/cmd/bitcoiva/testnets/STATUS.md#june-13-2018-230-est---published-postmortem-of-bitcoiva-6001-failure). 
+[crashed](https://github.com/osiz-blockchainapp/bitcoiva-sdk/blob/master/cmd/bitcoiva/testnets/STATUS.md#june-13-2018-230-est---published-postmortem-of-bitcoiva-6001-failure). 
 If you run `bitcoivadebug hack $HOME/.bitcoivad` on that 
 state, it will do a binary search on the state history to find when the state
 invariant was violated.

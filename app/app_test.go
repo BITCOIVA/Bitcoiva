@@ -8,8 +8,8 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	"github.com/tendermint/tm-db"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/codec"
-	"github.com/BITCOIVA/Bitcoiva-sdk/simapp"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/codec"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/simapp"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 )

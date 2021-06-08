@@ -1,6 +1,6 @@
 # Bitcoiva
 
-Bitcoiva is the first implementation of the Bitcoiva Hub, built using the [Bitcoiva SDK](https://github.com/BITCOIVA/Bitcoiva-sdk).
+Bitcoiva is the first implementation of the Bitcoiva Hub, built using the [Bitcoiva SDK](https://github.com/osiz-blockchainapp/bitcoiva-sdk).
 ## Mainnet Full Node Quick Start
 
 This assumes that you're running Linux or MacOS and have installed [Go 1.14+](https://golang.org/dl/).  This guide helps you:
@@ -16,9 +16,9 @@ Build, Install, and Name your Node:
 
 ```bash
 # Clone Bitcoiva from the latest release:
-git clone https://github.com/BITCOIVA/Bitcoiva.git
+git clone git@bitbucket.org:bitcoiva/bitcoiva_cosmos.git
 # Enter the folder Bitcoiva was cloned into
-cd Bitcoiva
+cd bitcoiva_cosmos/Bitcoiva
 # Compile and install Bitcoiva
 make install
 # Initialize Bitcoivad in ~/.bitcoivad and name your node

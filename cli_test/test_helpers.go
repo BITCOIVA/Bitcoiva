@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/client"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/client"
 
 	"github.com/stretchr/testify/require"
 
@@ -18,18 +18,18 @@ import (
 
 	"github.com/cosmos/bitcoiva/app"
 
-	clientkeys "github.com/BITCOIVA/Bitcoiva-sdk/client/keys"
-	"github.com/BITCOIVA/Bitcoiva-sdk/codec"
-	"github.com/BITCOIVA/Bitcoiva-sdk/crypto/keys"
-	"github.com/BITCOIVA/Bitcoiva-sdk/server"
-	"github.com/BITCOIVA/Bitcoiva-sdk/simapp"
-	"github.com/BITCOIVA/Bitcoiva-sdk/tests"
-	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/auth"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/distribution"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/gov"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/slashing"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/staking"
+	clientkeys "github.com/osiz-blockchainapp/bitcoiva-sdk/client/keys"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/codec"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/crypto/keys"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/server"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/simapp"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/tests"
+	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/auth"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/distribution"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/gov"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/slashing"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/staking"
 )
 
 const (

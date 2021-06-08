@@ -79,12 +79,12 @@ script: |
 
   # Configure LDFLAGS for reproducible builds
   LDFLAGS="-extldflags=-static -buildid=${VERSION} -s -w \
-    -X github.com/BITCOIVA/Bitcoiva-sdk/version.Name=bitcoiva \
-    -X github.com/BITCOIVA/Bitcoiva-sdk/version.ServerName=bitcoivad \
-    -X github.com/BITCOIVA/Bitcoiva-sdk/version.ClientName=bitcoivacli \
-    -X github.com/BITCOIVA/Bitcoiva-sdk/version.Version=${VERSION} \
-    -X github.com/BITCOIVA/Bitcoiva-sdk/version.Commit=${COMMIT} \
-    -X github.com/BITCOIVA/Bitcoiva-sdk/version.BuildTags=netgo,ledger"
+    -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.Name=bitcoiva \
+    -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.ServerName=bitcoivad \
+    -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.ClientName=bitcoivacli \
+    -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.Version=${VERSION} \
+    -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.Commit=${COMMIT} \
+    -X github.com/osiz-blockchainapp/bitcoiva-sdk/version.BuildTags=netgo,ledger"
 
   # Extract release tarball and build
   for arch in ${ARCHS}; do

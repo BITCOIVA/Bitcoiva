@@ -7,9 +7,9 @@ import (
 	"os"
 	"path"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/store"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/store"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/baseapp"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/baseapp"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -18,7 +18,7 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
+	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
 
 	bitcoiva "github.com/cosmos/bitcoiva/app"
 )

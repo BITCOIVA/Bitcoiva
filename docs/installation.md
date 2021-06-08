@@ -62,7 +62,7 @@ Build tags indicate special features that have been enabled in the binary.
 To test any changes made in the SDK or Tendermint, a `replace` clause needs to be added to `go.mod` providing the correct import path.
 
 - Make appropriate changes
-- Add `replace github.com/BITCOIVA/Bitcoiva-sdk => /path/to/clone/cosmos-sdk` to `go.mod`
+- Add `replace github.com/osiz-blockchainapp/bitcoiva-sdk => /path/to/clone/cosmos-sdk` to `go.mod`
 - Run `make clean install` or `make clean build`
 - Test changes
 

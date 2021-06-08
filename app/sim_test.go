@@ -17,25 +17,25 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/baseapp"
-	"github.com/BITCOIVA/Bitcoiva-sdk/simapp"
-	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/auth"
-	authsim "github.com/BITCOIVA/Bitcoiva-sdk/x/auth/simulation"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/bank"
-	distr "github.com/BITCOIVA/Bitcoiva-sdk/x/distribution"
-	distrsim "github.com/BITCOIVA/Bitcoiva-sdk/x/distribution/simulation"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/gov"
-	govsim "github.com/BITCOIVA/Bitcoiva-sdk/x/gov/simulation"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/mint"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/params"
-	paramsim "github.com/BITCOIVA/Bitcoiva-sdk/x/params/simulation"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/simulation"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/slashing"
-	slashingsim "github.com/BITCOIVA/Bitcoiva-sdk/x/slashing/simulation"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/staking"
-	stakingsim "github.com/BITCOIVA/Bitcoiva-sdk/x/staking/simulation"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/supply"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/baseapp"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/simapp"
+	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/auth"
+	authsim "github.com/osiz-blockchainapp/bitcoiva-sdk/x/auth/simulation"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/bank"
+	distr "github.com/osiz-blockchainapp/bitcoiva-sdk/x/distribution"
+	distrsim "github.com/osiz-blockchainapp/bitcoiva-sdk/x/distribution/simulation"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/gov"
+	govsim "github.com/osiz-blockchainapp/bitcoiva-sdk/x/gov/simulation"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/mint"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/params"
+	paramsim "github.com/osiz-blockchainapp/bitcoiva-sdk/x/params/simulation"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/simulation"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/slashing"
+	slashingsim "github.com/osiz-blockchainapp/bitcoiva-sdk/x/slashing/simulation"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/staking"
+	stakingsim "github.com/osiz-blockchainapp/bitcoiva-sdk/x/staking/simulation"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/supply"
 )
 
 func init() {
@@ -364,7 +364,7 @@ func testAndRunTxs(app *BitcoivaApp) []simulation.WeightedOperation {
 
 func invariants(app *BitcoivaApp) []sdk.Invariant {
 	// TODO: fix PeriodicInvariants, it doesn't seem to call individual invariants for a period of 1
-	// Ref: https://github.com/BITCOIVA/Bitcoiva-sdk/issues/4631
+	// Ref: https://github.com/osiz-blockchainapp/bitcoiva-sdk/issues/4631
 	if period == 1 {
 		return app.crisisKeeper.Invariants()
 	}
@@ -377,7 +377,7 @@ func fauxMerkleModeOpt(bapp *baseapp.BaseApp) {
 }
 
 // Profile with:
-// /usr/local/go/bin/go test -benchmem -run=^$ github.com/BITCOIVA/Bitcoiva-sdk/BitcoivaApp -bench ^BenchmarkFullAppSimulation$ -Commit=true -cpuprofile cpu.out
+// /usr/local/go/bin/go test -benchmem -run=^$ github.com/osiz-blockchainapp/bitcoiva-sdk/BitcoivaApp -bench ^BenchmarkFullAppSimulation$ -Commit=true -cpuprofile cpu.out
 func BenchmarkFullAppSimulation(b *testing.B) {
 	logger := log.NewNopLogger()
 

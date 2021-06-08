@@ -18,18 +18,18 @@ import (
 	"github.com/tendermint/tendermint/types"
 	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/client"
-	"github.com/BITCOIVA/Bitcoiva-sdk/client/keys"
-	"github.com/BITCOIVA/Bitcoiva-sdk/codec"
-	"github.com/BITCOIVA/Bitcoiva-sdk/server"
-	srvconfig "github.com/BITCOIVA/Bitcoiva-sdk/server/config"
-	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
-	"github.com/BITCOIVA/Bitcoiva-sdk/types/module"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/auth"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/genaccounts"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/genutil"
-	genutiltypes "github.com/BITCOIVA/Bitcoiva-sdk/x/genutil/types"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/staking"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/client"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/client/keys"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/codec"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/server"
+	srvconfig "github.com/osiz-blockchainapp/bitcoiva-sdk/server/config"
+	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/types/module"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/auth"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/genaccounts"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/genutil"
+	genutiltypes "github.com/osiz-blockchainapp/bitcoiva-sdk/x/genutil/types"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/staking"
 )
 
 var (
@@ -236,7 +236,7 @@ func InitTestnet(cmd *cobra.Command, config *tmconfig.Config, cdc *codec.Codec,
 		}
 
 		// TODO: Rename config file to server.toml as it's not particular to Bitcoiva
-		// (REF: https://github.com/BITCOIVA/Bitcoiva-sdk/issues/4125).
+		// (REF: https://github.com/osiz-blockchainapp/bitcoiva-sdk/issues/4125).
 		bitcoivaConfigFilePath := filepath.Join(nodeDir, "config/bitcoivad.toml")
 		srvconfig.WriteConfigFile(bitcoivaConfigFilePath, bitcoivaConfig)
 	}

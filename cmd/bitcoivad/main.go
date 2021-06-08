@@ -15,17 +15,17 @@ import (
 
 	"github.com/cosmos/bitcoiva/app"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/baseapp"
-	"github.com/BITCOIVA/Bitcoiva-sdk/client"
-	"github.com/BITCOIVA/Bitcoiva-sdk/server"
-	"github.com/BITCOIVA/Bitcoiva-sdk/store"
-	//sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
-    sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/baseapp"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/client"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/server"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/store"
+	//sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+    sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/genaccounts"
-	genaccscli "github.com/BITCOIVA/Bitcoiva-sdk/x/genaccounts/client/cli"
-	genutilcli "github.com/BITCOIVA/Bitcoiva-sdk/x/genutil/client/cli"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/staking"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/genaccounts"
+	genaccscli "github.com/osiz-blockchainapp/bitcoiva-sdk/x/genaccounts/client/cli"
+	genutilcli "github.com/osiz-blockchainapp/bitcoiva-sdk/x/genutil/client/cli"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/staking"
 	//"types"
 )
 

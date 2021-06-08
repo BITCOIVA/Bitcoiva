@@ -21,13 +21,13 @@ import (
 
 	"github.com/cosmos/bitcoiva/app"
 
-	"github.com/BITCOIVA/Bitcoiva-sdk/client"
-	"github.com/BITCOIVA/Bitcoiva-sdk/tests"
-	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/auth"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/genaccounts"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/gov"
-	"github.com/BITCOIVA/Bitcoiva-sdk/x/mint"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/client"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/tests"
+	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/auth"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/genaccounts"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/gov"
+	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/mint"
 )
 
 func TestBitcoivaCLIKeysAddMultisig(t *testing.T) {
