@@ -19,10 +19,10 @@ import (
 
 	"github.com/cosmos/bitcoiva/app"
 
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/baseapp"
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/server"
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/store"
-	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
+	"github.com/BITCOIVA/Bitcoiva-sdk/baseapp"
+	"github.com/BITCOIVA/Bitcoiva-sdk/server"
+	"github.com/BITCOIVA/Bitcoiva-sdk/store"
+	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
 )
 
 func replayCmd() *cobra.Command {

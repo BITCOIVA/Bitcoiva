@@ -1,6 +1,6 @@
 # Bitcoiva
 
-Bitcoiva is the first implementation of the Bitcoiva Hub, built using the [Bitcoiva SDK](https://github.com/osiz-blockchainapp/bitcoiva-sdk).
+Bitcoiva is the first implementation of the Bitcoiva Hub, built using the [Bitcoiva SDK](https://github.com/BITCOIVA/Bitcoiva-sdk).
 ## Mainnet Full Node Quick Start
 
 This assumes that you're running Linux or MacOS and have installed [Go 1.14+](https://golang.org/dl/).  This guide helps you:

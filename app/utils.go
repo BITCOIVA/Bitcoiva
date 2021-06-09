@@ -7,9 +7,9 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/baseapp"
-	sdk "github.com/osiz-blockchainapp/bitcoiva-sdk/types"
-	"github.com/osiz-blockchainapp/bitcoiva-sdk/x/staking"
+	"github.com/BITCOIVA/Bitcoiva-sdk/baseapp"
+	sdk "github.com/BITCOIVA/Bitcoiva-sdk/types"
+	"github.com/BITCOIVA/Bitcoiva-sdk/x/staking"
 )
 
 var (
